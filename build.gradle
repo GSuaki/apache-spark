@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'examples.kafka'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.3.1'
+    compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.3.1'
+
+    compile group: 'org.apache.spark', name: 'spark-streaming_2.11', version: '2.3.1'
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
